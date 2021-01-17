@@ -1,0 +1,66 @@
+// BREAKPOINTS
+$bp-desktop-large: 1800px;
+$bp-desktop: 1400px;
+$bp-desktop-small: 1190px;
+$bp-tablet-large: 1150px;
+$bp-header: 1100px;
+$bp-tablet: 1000px;
+$bp-mobile-article: 900px;
+$bp-mobile: 800px;
+$bp-mobile-small: 450px;
+
+// use '@include mobile' in place of regular media queries
+
+@mixin desktop-large-up {
+	@media (min-width: #{$bp-desktop-large}) {
+		@content;
+	}
+}
+
+@mixin desktop-up {
+	@media (min-width: #{$bp-desktop-small}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (max-width: #{$bp-desktop}) {
+		@content;
+	}
+}
+
+@mixin tablet-large {
+	@media (max-width: #{$bp-tablet-large}) {
+		@content;
+	}
+}
+
+@mixin header {
+	@media (max-width: #{$bp-header}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: #{$bp-tablet}) {
+		@content;
+	}
+}
+
+@mixin mobile-article {
+	@media (max-width: #{$bp-mobile-article}) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: #{$bp-mobile}) {
+		@content;
+	}
+}
+
+@mixin mobile-small {
+	@media (max-width: #{$bp-mobile-small}) {
+		@content;
+	}
+}

@@ -1,0 +1,47 @@
+h1 {
+	@include open-sans;
+	font-size: 20px;
+	line-height: 27px;
+	
+	color: $dark-grey;
+}
+h2 {
+	@include open-sans;
+	font-size: 16px;
+	line-height: 22px;
+	color: $light-grey;
+	margin:0;
+}
+h3 {
+	@include open-sans;
+	font-size: 20px;
+}
+h4 {
+	@include open-sans;
+	font-size: 14px;
+	color: $dark-grey;
+}
+h5 {
+	@include open-sans;
+	font-size: 12px;
+	color: $light-grey;
+}
+h6,
+p,
+a,
+span,
+li,
+ul,
+ol,
+
+a {
+	text-decoration: none;
+}
+
+.bold {
+    @include open-sans-bold;
+}
+
+strong {
+	@include open-sans-bold;
+}

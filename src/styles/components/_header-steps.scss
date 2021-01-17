@@ -1,0 +1,52 @@
+.header-steps {
+    display: flex;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    transform:translate(0,-30px);
+}
+
+.header-steps-item {
+    color: $dark-grey;
+    font-size: 14.224px;
+    text-decoration: none;
+    display: block;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    padding-top: 18px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+.header-steps-item:hover {
+    color: $light-grey;
+    text-decoration: none;
+}
+
+.header-steps-item:before {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+    content: "";
+    display: block;
+    height: 24px;
+    left: 50%;
+    padding-left: 1px;
+    padding-top: 1px;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%,-50%);
+    width: 24px;
+}
+
+.header-steps-item--completed:before {
+    content: "\F00C";
+    font-family: FontAwesome;
+}
+
+.header-steps-item--completed:before, .header-steps-item--current:before {
+    background: $light-green;
+    color: $white;
+}

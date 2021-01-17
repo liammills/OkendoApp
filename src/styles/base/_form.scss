@@ -1,0 +1,139 @@
+// .button-link {
+// 	border: 1px solid #000000;
+// 	box-sizing: border-box;
+// 	border-radius: 60px;
+// 	text-align: center;
+// 	padding: 10px 38px;
+//   background: transparent;
+//   font-size: 16px;
+//   line-height: 120%;
+// 	/*background: $c-white;*/
+//   min-width: 199px;
+//   display: inline-block;
+//   text-decoration: none;
+  
+// 	transition: 0.2s text-shadow ease-in-out, 0.2s box-shadow ease-in-out;
+
+//   &:hover {
+//     text-shadow: 0.2px 0 #000000, -0.2px 0 #000000, 0 0.2px #000000, 0 -0.2px #000000;
+//     box-shadow: 0.2px 0 #000000, -0.2px 0 #000000, 0 0.2px #000000, 0 -0.2px #000000;
+//   }
+
+// 	&.-orange {
+//    	 background: $c-orange-bright;
+//   	}
+// }
+
+// .button-holder {
+// 	margin-right: 20px;
+// 	margin-bottom: 20px;
+// }
+
+// .circle {
+// 	@include font-eina01-regular;
+//     width:149px;
+//     height:149px;
+//     justify-content: center;
+// 	align-items: center;
+// 	border-radius: 100%;
+// 	text-align: center;
+// 	display: flex;
+// 	font-size:16px;
+//     color:#fff;
+//     background: $c-pink;
+// }
+
+// .form-module-control {
+//   border-bottom: 1px solid;
+//   padding-bottom: 0px;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   margin: 20px 0 40px 0;
+
+//   .form-input {
+//     @include font-light-condensed;
+//     width: 100%;
+//     border: none;
+//     background: transparent;
+//     font-size: 18px;
+//     color: $c-black;
+//     /*padding: 0 20px;*/
+
+//     @include mobile {
+//       font-size: 22px;
+//     }
+
+//     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+//       color: black;
+//       opacity: 1;
+//       /*font-size: 40px; /* Firefox */
+//     }
+//   }
+
+//   .form-button {
+//     background: transparent;
+//     border: none;
+//     font-weight: 600;
+//     font-size: 9px;
+    
+//     @include mobile {
+//       font-size: 9px;
+//     }
+//   }
+// }
+
+// .form-field-holder {
+// 	display: flex;
+// }
+
+// form {
+//   /* Change the white to any color ;) */
+//   input:-webkit-autofill,
+//   input:-webkit-autofill:hover, 
+//   input:-webkit-autofill:focus, 
+//   input:-webkit-autofill:active  {
+//       -webkit-box-shadow: 0 0 0 30px $c-orange-bright inset !important;
+//       box-shadow: 0 0 0 30px $c-orange-bright inset !important;
+//   }
+// }
+
+// .check-box-control {
+// 	margin-right: 30px;
+
+// 	@include mobile {
+//       width: 50%;
+//       margin: 0;
+//     }
+
+// 	.group-header {
+// 		font-size: 13px;
+//     font-weight: 600;
+//     text-transform: uppercase;
+//     font-size: 13px;
+//     line-height: 140%;
+//     /* or 18px */
+
+//     letter-spacing: 0.18em;
+// 	}
+
+// 	.check-box-group {
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+
+// 	span {
+// 		font-size: 18px;
+//     	padding: 0 10px;
+
+//     	@include mobile {
+// 	      font-size: 14px;
+// 	    }
+// 	}
+// }
+
+// input,
+// button {
+//     outline: none;
+// }
+

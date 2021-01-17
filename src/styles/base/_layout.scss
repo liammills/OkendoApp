@@ -1,0 +1,61 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	@include open-sans;
+	font-size: .889rem;
+	line-height: 1.6;
+	background-color: $background;
+	color: $dark-grey;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.logo {
+	width: 340px;
+}
+
+.header {
+	padding: 25px 0px 15px 0px;
+	margin-bottom: 30px;
+	background: $white;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+}
+
+.main-container {
+	padding: 16px;
+	margin-bottom: 15px;
+	background: $white;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+}
+
+.centre-container {
+	box-sizing: border-box;
+	width: 720px;
+	margin: 0 auto;
+	position: relative;
+	// Border box makes the padding go inside of the max-width, instead of being added to it. Without it, this box would become 1440 + 20 + 20 = 1480px
+
+	@include mobile {
+		width:400px;
+    }
+}
+
+main,
+section,
+div,
+a,
+input,
+label,
+textarea,
+footer,
+img,
+
+button {
+	// cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.nextButton {
+    margin: 25px 0px;
+    // bottom:0px;
+    width:100%;
+    background-color: $light-green;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+
+    @include mobile {
+      width: 100vw;
+      border-radius: 0px;
+      position:fixed;
+      bottom:0;
+      left:0;
+      margin: 25px 0px 0px 0px;
+    }
+  }
+  
+  .nextButton:hover {
+    background-color:$dark-green;
+  }
+
+ 
+  .clickable-button {
+    @include open-sans;
+    font-size: 14px;
+    color: $dark-grey;
+    background-color: #d9d9d9;
+    border: 2px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 4px 8px;
+    transition: background .2s ease;
+    display: inline-block;
+    max-width: 100%;
+    margin: 3px 2px;
+  }
+
+  .clickable-button:hover {
+    background: #c2c2c2;
+    border-color: #c2c2c2;
+  }
+
+  .clickable-button:checked {
+    background:$light-green;
+    border-color: $light-green;
+    color: $white;
+  }
