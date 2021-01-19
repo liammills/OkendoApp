@@ -9,8 +9,6 @@
     "lint": "eslint --cache --format codeframe --ext mjs,jsx,js src"
   },
   "dependencies": {
-    "deepmerge": "^4.2.2",
-    "neutrino-lint-base": "^4.3.1",
     "node-sass": "^5.0.0",
     "prop-types": "^15",
     "rc-slider": "^9.7.1",
