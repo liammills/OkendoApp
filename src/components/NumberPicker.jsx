@@ -25,12 +25,12 @@ const NumberPicker = ({ start, end, num }) => (
       <div className="helper-text">
         <h5 className="start">{start}</h5>
         <h5 className="end">{end}</h5>
-        <h5>
-          (for eslint) num:
-          {num}
-        </h5>
       </div>
     </div>
+    <h5>
+      (for eslint) num:
+      {num}
+    </h5>
   </div>
 );
 
