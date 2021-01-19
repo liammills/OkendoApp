@@ -1,5 +1,6 @@
 import { hot } from 'react-hot-loader';
 import React, { useState } from 'react';
+// import PropTypes from 'prop-types';
 import { CountryDropdown } from 'react-country-region-selector';
 import './styles/App.scss';
 import NextButton from './components/NextButton';
@@ -52,7 +53,7 @@ const App = () => {
   return (
     <div>
       <div className="header">
-        <img className="logo" src="../src/logo.png" alt="Mia Donna: The Eco Diamond" />
+        <img className="logo" src="../src/assets/logo.png" alt="Mia Donna: The Eco Diamond" />
         <h2>1815 Rose Gold Chronograph Watch - Brown Croco Strap</h2>
         <h1>Ratings</h1>
       </div>
@@ -127,5 +128,23 @@ const App = () => {
     </div>
   );
 };
+
+// App.propTypes = {
+//   start: PropTypes.string,
+//   end: PropTypes.string,
+//   num: PropTypes.number,
+//   data: PropTypes.arrayOf(PropTypes.string),
+//   options: PropTypes.arrayOf(PropTypes.string),
+//   max: PropTypes.number,
+// };
+
+// App.defaultProps = {
+//   start: null,
+//   end: null,
+//   num: 0,
+//   data: null,
+//   options: null,
+//   max: 0,
+// };
 
 export default hot(module)(App);
