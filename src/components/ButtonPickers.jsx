@@ -1,13 +1,15 @@
 import React from 'react';
 
 const Button = (string) => (
-    <label className="clickable-button">{string}</label>
+  <p className="clickable-button">{string}</p>
 );
 
-const ButtonPickers = ( { options, max } ) => (
-    <div className="subtitle">
-        {options.map(txt => Button(txt))}
-    </div>
+const ButtonPickers = ({ options, max }) => (
+  <div className="subtitle">
+    {options && options.map((txt) => Button(txt))}
+    Pick max:
+    {max}
+  </div>
 );
 
 export default ButtonPickers;

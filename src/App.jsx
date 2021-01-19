@@ -2,10 +2,10 @@ import { hot } from 'react-hot-loader';
 import React, { useState } from 'react';
 import { CountryDropdown } from 'react-country-region-selector';
 import './styles/App.scss';
-import NextButton from './components/NextButton.jsx';
-import NumberPicker from './components/NumberPicker.jsx';
-import ButtonPickers from './components/ButtonPickers.jsx';
-import HeaderSteps from './components/HeaderSteps.jsx';
+import NextButton from './components/NextButton';
+import NumberPicker from './components/NumberPicker';
+import ButtonPickers from './components/ButtonPickers';
+import HeaderSteps from './components/HeaderSteps';
 
 // Input Data
 
@@ -87,7 +87,7 @@ const App = () => {
           <h4 className="subtitle">Age Range</h4>
           <h5 className="sub-subtitle">
             Choose
-            <strong>one</strong>
+            <strong> one</strong>
           </h5>
           <ButtonPickers
             options={ageRangeOptions}
@@ -98,7 +98,7 @@ const App = () => {
           <h4 className="subtitle">Bought For</h4>
           <h5 className="sub-subtitle">
             Choose
-            <strong>one</strong>
+            <strong> one</strong>
           </h5>
           <ButtonPickers
             options={boughtForOptions}
