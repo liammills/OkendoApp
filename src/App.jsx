@@ -1,11 +1,11 @@
 import { hot } from 'react-hot-loader';
 import React, { useState } from 'react';
+import { CountryDropdown } from 'react-country-region-selector';
 import './styles/App.scss';
 import NextButton from './components/NextButton.jsx';
 import NumberPicker from './components/NumberPicker.jsx';
 import ButtonPickers from './components/ButtonPickers.jsx';
 import HeaderSteps from './components/HeaderSteps.jsx';
-import { CountryDropdown } from 'react-country-region-selector';
 
 // Input Data
 
@@ -41,12 +41,12 @@ const boughtForOptions = [
 // Script
 
 const App = () => {
-  const [quality, setQuality] = useState(0);
-  const [design, setDesign] = useState(0);
-  const [experience, setExperience] = useState(0);
-  const [standouts, setStandouts] = useState(null);
+  // const [quality, setQuality] = useState(0);
+  // const [design, setDesign] = useState(0);
+  // const [experience, setExperience] = useState(0);
+  // const [standouts, setStandouts] = useState(null);
   const [age, setAge] = useState(null);
-  const [boughtFor, setBoughtFor] = useState(null);
+  // const [boughtFor, setBoughtFor] = useState(null);
   const [country, setCountry] = useState('Australia');
 
   return (
@@ -85,16 +85,21 @@ const App = () => {
           />
           <h4 className="subtitle bold break">About You</h4>
           <h4 className="subtitle">Age Range</h4>
-          {/* ADD BOLD TO 'ONE' */}
-          <h5 className="sub-subtitle">Choose <strong>one</strong></h5>
+          <h5 className="sub-subtitle">
+            Choose
+            <strong>one</strong>
+          </h5>
           <ButtonPickers
             options={ageRangeOptions}
             max={1}
-            onChange={val => setAge(val)}
+            target={age}
+            onChange={(val) => setAge(val)}
           />
           <h4 className="subtitle">Bought For</h4>
-          {/* ADD BOLD TO 'ONE' */}
-          <h5 className="sub-subtitle">Choose <strong>one</strong></h5>
+          <h5 className="sub-subtitle">
+            Choose
+            <strong>one</strong>
+          </h5>
           <ButtonPickers
             options={boughtForOptions}
             max={1}
@@ -106,7 +111,10 @@ const App = () => {
             onChange={(val) => setCountry(val)}
           />
         </div>
-        <NextButton data={[
+        <NextButton
+          data={null}
+        />
+        {/* <NextButton data={[
           quality,
           design,
           experience,
@@ -114,15 +122,10 @@ const App = () => {
           age,
           boughtFor,
           country]}
-        />
+        /> */}
       </div>
     </div>
   );
 };
 
 export default hot(module)(App);
-
-// TO DO
-
-// + Create state for each & make required
-// + Create div for the green progress dots
